@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import { TwitterLogo } from './TwitterLogo.component'
-const twitterLogo = require('../assets/twitter-logo.svg');
 
 export interface FooterProps {
 
