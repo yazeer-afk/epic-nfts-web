@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import { Footer } from './components/Footer.component'
 import { ConnectWalletButton } from './components/ConnectWalletButton.component'
+import { MintNFTButton } from './components/MintNFTButton.component'
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
             Each unique. Each beautiful. Discover your NFT today.
           </p>
           {renderButton()}          
+          {currentAccount && <MintNFTButton />}
         </div>
 
         <Footer />
