@@ -139,3 +139,11 @@
     opacity: 0.5;
   }
 }
+
+
+
+.opensea-link {
+  text-decoration: none;
+  color: #FDFDFD;
+  font-size: 1.2em;
+}

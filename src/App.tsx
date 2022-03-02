@@ -5,7 +5,7 @@ import { ConnectWalletButton } from './components/ConnectWalletButton.component'
 import { MintNFTButton } from './components/MintNFTButton.component'
 import { checkNetwork, setupMintListener } from './util/contract';
 import { Loader } from './components/Loader.component'
-
+import { ViewCollectionButton } from './components/ViewCollectionButton.component'
 function App() {
 
   const [currentAccount, setCurrentAccount] = useState("")
@@ -67,6 +67,8 @@ function App() {
             </div>
           }
         </div>
+
+          <ViewCollectionButton />
 
         <Footer />
       </div>
