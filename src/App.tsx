@@ -3,6 +3,7 @@ import './App.css';
 import { Footer } from './components/Footer.component'
 import { ConnectWalletButton } from './components/ConnectWalletButton.component'
 import { MintNFTButton } from './components/MintNFTButton.component'
+import { checkNetwork, setupMintListener } from './util/contract';
 
 function App() {
 
@@ -24,6 +25,8 @@ function App() {
     if (accounts.length > 0) {
       const account = accounts[0]
       setCurrentAccount(account)
+      checkNetwork()
+      setupMintListener()
     } else {
       console.log('No authorized accounts found!')
     }
